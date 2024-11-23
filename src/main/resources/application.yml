@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: mongodb+srv://${DB_USER:admin}:${DB_PASSWORD:admin}@clusterwebflux.7i6zv.mongodb.net/${DB_NAME:spring-webflux-users}?retryWrites=true&w=majority&appName=ClusterWebflux
+  application:
+    name: spring-webflux-users
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+logging:
+  level:
+    root: DEBUG    
